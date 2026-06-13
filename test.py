@@ -76,8 +76,6 @@ for i in range(len(geo)):
         popup=texto_popup
     ).add_to(m)
 
-m.save("meu_mapa.html")
-
 # Transforma o mapa em texto HTML/JavaScript puro
 mapa_html = m._repr_html_()
 
