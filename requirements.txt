@@ -1,0 +1,5 @@
+pandas
+folium
+kagglehub
+PyQt5
+PyQtWebEngine

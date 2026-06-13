@@ -1,8 +1,27 @@
-# My Take on The Program
+# World Capitals Tracker 🌍
+> **My Take on The Program:** I built my own version of this mapping project using a different database. Instead of tracking disasters, I extracted all world cities and mapped out exclusively national capitals. I also ported the entire project into a native desktop application using **PyQt5** to provide a cleaner, standalone visualization tool. It’s a simple app, but I learned a lot about data engineering and GUI integration making it. 
+> 
+> Thank you, **MLH Global Hack Week**!
 
-I made my own version of mapping with another database: I took all the cities in the world and just marked the capitals. I also made the map open in a desktop application: this way, it's easier to visualize. It's a simple app, but I learned a lot making it. Thank you **MLH Global Hack Week**.
+---
 
-# Mapping with Python
+## 🚀 How to Run (My Desktop Version)
+You don't need to manually configure your environment or install dependencies via terminal. 
+
+1. Ensure you have Python installed.
+2. Download the project files.
+3. Simply double-click the **[start.bat](start.bat)** file. 
+
+The batch script will automatically handle the setup (`requirements.txt`), download the dataset via `kagglehub`, and launch the desktop map app window instantly.
+
+### 🛠️ Built With (Desktop App)
+* **Python** & **Pandas** (Data cleaning & filtering)
+* **Folium / Leaflet** & **Esri Tiles** (Geospatial visualization & infinite horizontal scroll)
+* **PyQt5** & **PyQtWebEngine** (Desktop GUI & Chromium rendering engine)
+
+---
+
+# Mapping with Python (Original Workshop Context)
 
 A 1-hour workshop for **MLH Global Hack Week** — taking a real, messy government dataset and turning it into an interactive map of climate-related natural disasters using pandas and Folium.
 
@@ -13,7 +32,7 @@ A 1-hour workshop for **MLH Global Hack Week** — taking a real, messy governme
 - Building interactive maps with [Folium](https://python-visualization.github.io/folium/)
 - Encoding multiple dimensions of data visually (colour = disaster type, size = severity)
 
-## Getting started
+## Getting started (Workshop Version)
 
 1. **Get the dataset** — go to [public.emdat.be/data](https://public.emdat.be/data), create a free account, and download disaster data. Filter settings used for this workshop:
    - Time period: 2000–2026
@@ -26,22 +45,3 @@ A 1-hour workshop for **MLH Global Hack Week** — taking a real, messy governme
 3. Install dependencies:
    ```bash
    pip install pandas folium openpyxl jupyter
-   ```
-
-4. Open `notebooks/starter.ipynb` and follow along.
-
-## Structure
-
-- `notebooks/starter.ipynb` — follow-along version with `# TODO` prompts
-- `notebooks/solution.ipynb` — complete worked solution
-- `data/` — place your downloaded EM-DAT export here (not committed to git due to size)
-
-## Data source
-
-[EM-DAT](https://www.emdat.be/) — The International Disaster Database, maintained by CRED (Centre for Research on the Epidemiology of Disasters), UCLouvain.
-
-## Further exploration
-
-- [GDIS dataset](https://www.nature.com/articles/s41597-021-00846-6) — subnational geocoded disaster data
-- [Our World in Data](https://ourworldindata.org/) — broader climate datasets
-- `folium.plugins` — heatmaps, marker clusters, and time-animated maps
