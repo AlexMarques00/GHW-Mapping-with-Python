@@ -1,4 +1,8 @@
-# Mapping Climate Crises with Python
+# My Take on The Program
+
+I made my own version of mapping with another database: I took all the cities in the world and just marked the capitals. I also made the map open in a desktop application: this way, it's easier to visualize. It's a simple app, but I learned a lot making it. Thank you **MLH Global Hack Week**.
+
+# Mapping with Python
 
 A 1-hour workshop for **MLH Global Hack Week** — taking a real, messy government dataset and turning it into an interactive map of climate-related natural disasters using pandas and Folium.
 
